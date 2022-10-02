@@ -6,6 +6,18 @@ var theText = document.getElementById("text");
 var theTextLarge = document.getElementById("textLarge");
 var textBox = document.getElementById("text_test")
 var ratioText = document.getElementById("ratio");
+var aaSmall = document.getElementById("certi_aa_small");
+var aaLarge = document.getElementById("certi_aa_large");
+var aaaSmall = document.getElementById("certi_aaa_small");
+var aaaLarge = document.getElementById("certi_aaa_large");
+
+var aaTestSmall = document.getElementById("Test_AAsmall");
+var aaTestLarge = document.getElementById("Test_AAlarge");
+var aaaTestSmall = document.getElementById("Test_AAAsmall");
+var aaaTestLarge= document.getElementById("Test_AAAlarge");
+
+
+
 
 
 background.addEventListener("input", function(){
@@ -15,9 +27,8 @@ background.addEventListener("input", function(){
   var rgbColorB = hexToRgb(theColor);
   luminanceB =relativeLuminanceW3C(rgbColorB[0], rgbColorB[1], rgbColorB[2])
   var ratio = calculateRatio(luminanceB, luminanceF);
-  console.log(luminanceB)
   ratioText.innerHTML =Math.round(ratio * 100) /100;
-   certificateTest(ratio)
+  checkCerticates((Math.round(ratio *100))/100);
 }, false);
 
 foreground.addEventListener("input", function(){
@@ -26,12 +37,11 @@ foreground.addEventListener("input", function(){
     theText.style.color = theColorF;
     theTextLarge.style.color = theColorF;
 
-    console.log(hexToRgb(theColorF))
     var rgbColorF = hexToRgb(theColorF);
     luminanceF =relativeLuminanceW3C(rgbColorF[0], rgbColorF[1], rgbColorF[2])
     var ratio = calculateRatio(luminanceB, luminanceF);
     ratioText.innerHTML = Math.round(ratio * 100) /100;
- certificateTest(ratio)
+    checkCerticates((Math.round(ratio *100))/100);
   }, false);
 
 
@@ -102,3 +112,36 @@ function hexToRgb (hex) {
   }
 
 
+function checkCerticates(ratio){
+  if(ratio >=  4.5){
+    aaSmall.style.backgroundColor = '#51f081';
+    aaTestSmall.innerText = "Passou";
+  }
+  else{
+      aaSmall.style.backgroundColor = '#F4001D'
+      aaTestSmall.innerText = "Não Passou";
+  }
+  if(ratio>= 3) {
+    aaLarge.style.backgroundColor = '#51f081';
+    aaTestLarge.innerHTML = "Passou";
+  }
+  else{
+    aaLarge.style.backgroundColor="#F4001D"
+    aaTestLarge.innerHTML = "Não Passou"
+  }
+  if(ratio >= 7) {
+    aaaSmall.style.backgroundColor = "#51f081";
+    aaaTestSmall.innerHTML = "Passou";
+  }
+  else{
+    aaaSmall.style.backgroundColor = "#F4001D"
+    aaaTestSmall.innerHTML = "Não Passou"
+  }
+  if(ratio >= 4.5) {
+    aaaLarge.style.backgroundColor = "#51f081";
+    aaaTestLarge.innerHTML = "Passou";
+  }else{
+    aaaLarge.style.backgroundColor = "#F4001D"
+    aaaTestLarge.innerHTML = "Não Passou"
+  }
+}

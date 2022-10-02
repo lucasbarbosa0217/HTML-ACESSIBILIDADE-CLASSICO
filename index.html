@@ -1,37 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    
-</head>
-<bod aria-hidden="true">
-    <section class="container">
-        <div class="box">
-        <div class="inputbox input_color_foreground">  
-            <label for="foregroundcolor"><h3>Escolha a cor da fonte</h3></label>
-            <input type="color" name="" id="foregroundcolor" value="#ffffff">
-        </div>
-        <div class="inputbox input_color_background"> 
-            <label for="backgroundcolor"><h3>Escolha a cor do fundo</h3></label> 
-            <input type="color" name="" id="backgroundcolor">
-        </div>
-        </div>
-        <hr />
-        <div class="text_test" id="text_test">
-            <p id="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p id="textLarge"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
 
-        <p>Razão de constraste:<h2 id="ratio">21</h1></p>
-    </section>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="styleindex.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2a51699f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body aria-hidden="false">
+    <a href="#main" class="skip-to-main-content-link">Ir para o conteúdo principal          </a>
+
+    <header>
+
+        <h1 class="title">Acessibilidade<br><b lang="en">for devs</b></h1>
+        <p class="desc">Esta página reúne informações sobre Acessibilidade durante a
+            criação de páginas para a internet. Contém diversas dicas para
+            aprimorar seu site para atender a maior quantidade de pessoas.
+        </p>
+
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Boas Práticas</a></li>
+            <li><a href="#">Materiais</a></li>
+            <li><a href="constrast.html">Ferramentas</a></li>
+            <li><a href="#">Boas Práticas</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <h2 class="titleSection">Geral</h2>
+        <ul class="listPage">
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+        </ul>
+
+
+        <h2 class="titleSection">Cegueira ou baixa visão</h2>
+        <ul class="listPage">
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+        </ul>
+
+        <h2 class="titleSection">Cegueira ou baixa visão</h2>
+        <ul class="listPage">
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+        </ul>
+
+
+        <h2 class="titleSection">Cegueira ou baixa visão</h2>
+        <ul class="listPage">
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie</p>
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar conteúdo"></i></a></p>
+                </div>
+            </li>
+            <li>
+                <div class="pageMini">
+                    <h3>Lorem Ipsun Dolor</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida porta lectus, a
+                        lacinia magna. Donec ullamcorper pulvinar arcu quis semper. Aliquam vulputate, diam eu
+                        sollicitudin lacinia, sapien ipsum commodo erat, vitae lobortis erat erat nec justo. Suspendisse
+                        in hendrerit arcu. Suspendisse euismod, erat ultricies luctus imperdie
+                    <p class="link"><a href="content.html?id=1"><i class="fa-solid fa-arrow-right"
+                                title="Acessar Conteúdo"></i></a></p>
+
+                </div>
+            </li>
+        </ul>
+
+
+
+    </main>
+
+    <footer>
+        <p>2022 FIAP </p>
+    </footer>
+
 </body>
-<script src="script.js" type="text/javascript"></script>
 
 </html>
