@@ -15,6 +15,14 @@ header a{
     border-bottom: 1px solid black;
 }
 
+.container p{
+    margin-bottom: 1rem;
+}
+
+.container h1, h2, h3{
+    margin-bottom: 2rem;
+} 
+
 
 
 .title{
@@ -81,7 +89,24 @@ main{width: 65vw;
     font-size: 1.2rem;
 }
 
+.darkmode{
+    position:fixed;
+     display:static;
+    right:0;
+    bottom:0;
+    margin:2rem;
+    width:fit-content;
+    padding:1rem;
+    background-color: black;
+    font-size: 1rem;
+    border-radius: 5rem;
+    color:white
+    }
 
+    .darkmode input{
+        width: 2rem;
+        height:1rem
+    }
 
 
 /* ===== Scrollbar CSS ===== */
@@ -111,6 +136,19 @@ main{width: 65vw;
         max-width: 100vw;
     }
 
+    .darkmode{
+        position:inherit;
+        display: flex;
+        justify-content: space-around;
+        margin:0;
+        width:100%;
+        padding:1rem;
+        background-color: black;
+        font-size: 1rem;
+        border-radius:0;
+        color:white
+        }
+
     nav a {
         width: fit-content;
         border: 1px solid black;
@@ -135,9 +173,18 @@ main{width: 65vw;
     .container{
         padding: 1rem;
         width: 100%;
+        height: fit-content;
+       
         margin-top: 1rem;
     }
+
+    main{max-height: initial; overflow-y: hidden;}
+    body{
+        overflow-y: auto;
+        height: fit-content;
+    }
   }
+
 
 
   @media only screen and (min-width:999px){
@@ -177,3 +224,5 @@ main{width: 65vw;
     transform: translateX(-50%);
     opacity: 1;
   }
+
+ 
