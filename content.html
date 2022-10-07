@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d2a51699f1.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -22,7 +23,8 @@
    
     <header>
         <div class="titlebox"><h1 class="title">Acessibilidade<br><b lang="en">for devs</b></h1></div>
-        <nav>
+        <nav id="menu">
+          
             <a href="index.html">Home</a>
             <a href="content.html?id=1">HTML Semântico</a>
             <a href="content.html?id=2">Atributo Alt</a>
@@ -37,14 +39,18 @@
             </a>
             <a href="content.html?id=11">Boas Práticas para Descrições de Imagens</a>
             <a href="content.html?id=12">ARIA ou WAI-ARIA</a>
-            <a href="content.html?id=13">Lorem Ipsun</a>
-            <a href="content.html?id=14">Lorem Ipsun</a>
+       
         </nav>
     </header>
 
     <div class="darkmode">
-        <label for="darktoggle">Modo escuro?</label>
+        <div>
+        <label for="darktoggle" >Modo escuro?</label>
+      
         <input type="checkbox" id="darktoggle">
+        </div>
+        <label for="menutoggle" id="icon" tabindex="1" style="cursor: pointer;"><i class="fa-solid fa-bars" title="Ativar menu"></i></label>
+        <input id="menutoggle" type="checkbox" style="display:none">
     </div>
 
     <main>
