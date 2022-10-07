@@ -8,7 +8,7 @@
       .then((data) => data.json())
       .then((data)=>{
            
-                container.innerHTML = data.find(x => x.id === id).content
+                container.innerHTML = data.find(x => x.id === id).content.replaceAll("$", `"`)
     
       })
 
